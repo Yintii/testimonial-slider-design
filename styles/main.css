@@ -1,0 +1,56 @@
+html,body{
+    padding:0;
+    margin:0;
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.attribution { font-size: 12px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+#slider{ 
+    width: 75%;
+    margin: 5% auto;
+    background-color: white;
+}
+.slide{
+    box-shadow: -1px 5px 10px #ccc;
+    padding: 5%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    text-align:left;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../images/pattern-bg.svg"), 
+                      url("../images/pattern-curve.svg");
+    background-position: right, left bottom;
+}
+.quote{
+    position: relative;
+    top: 150px; left: 100px;
+    font-size: 18pt;
+    padding:1%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url("../images/pattern-quotes.svg");
+}
+.tag{
+    position: relative;
+    top:150px; left:100px;
+    font-size:14pt;
+    background-repeat: no-repeat;
+    background-position: left;
+    flex-direction: column;
+}
+.name{
+    font-style: bold;
+}
+.title{
+    color:#708090;
+}
+img{
+    box-shadow: -3px 5px 25px #ccc;
+}
+.leftSide{
+    display:absolute;
+
+}
