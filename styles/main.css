@@ -12,14 +12,18 @@ html, body{
     background-size: 100%;
     background-position: bottom left;
 }
-.attribution {
-    display:none;
-  }
-#silder{
-    width:100vw;
+.hidden{
+    visibility: hidden;
+}
+.shown{
+    visibility: visible;
+}
+.slider{
+    width:100%;
 }
 .slide{
     width:100vw;
+    margin: auto;
 }
 .imgandctrl{
     padding: 10% 0;
@@ -33,11 +37,12 @@ html, body{
 #nav-btns{
     display:inline-flex;
     position: relative;
-    top:-20px; left: 150px;
+    left: 150px; top: -15px;
     background-color: #F4F4F4;
     width: 20%;
     padding: 1%;
     border-radius: 25px;
+    z-index: 10000;
 }
 .button{
     margin: auto;
@@ -62,14 +67,7 @@ img{
 }
 .tag{
     position:fixed;
-    bottom: 45px; left: 25px;
-}
-
-#johnSlide{
-    
-}
-#tanyaSlide{
-    display:none;
+    bottom: 80px; left: 50px;
 }
 
 
@@ -77,29 +75,25 @@ img{
     html,body{
         background-image: none;
     }
-    .attribution { font-size: 12px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    #slider{
+    .slider{
         width:80%;
         margin:auto;
     }
     .slide{
         width: 100%;
-        margin: 5% auto;
+        margin: auto;
         display: flex;
         z-index: -1000;
         flex-flow: row nowrap;
         box-shadow: #ccc -5px 10px 20px;
-        background-image: url("../images/pattern-curve.svg");
+        background-image: url("../images/pattern-curve.svg"),
+                          url("../images/pattern-quotes.svg");
         background-repeat: no-repeat;
-        background-position: bottom left;
+        background-position: bottom left, 15% 25%;
+        background-size: 50%, 15%;
     }
     .synopsis{
         order:1;
-        background-image: url("../images/pattern-quotes.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 10%;
         display:flex;
         justify-content: center;
         flex-direction: column;
@@ -116,7 +110,6 @@ img{
         right: 0px; 
         bottom: 0px; 
         left: 50px;
-        background-image: url("../images/c");
     }
     .imgandctrl{
         order:2;
@@ -130,5 +123,15 @@ img{
         background-size: 100%;
         background-position: center right;
     }
+    #nav-btns{
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        background-color: #F4F4F4;
+        width: 20%;
+        padding: 1%;
+        border-radius: 25px;
+    }
 
 }
+

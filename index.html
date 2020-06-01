@@ -13,17 +13,17 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-<div id="slider">
+<div class="slider">
   <!-- Tanya Slide -->
   <div id="tanyaSlide" class="slide">
       <div class="imgandctrl">
         <img src="./images/image-tanya.jpg" alt="tanya-UX-engineer-image" />
         <div id="nav-btns">
-          <a href="#" class="button">
+          <a onclick="leftScroll()" class="button">
             <img src="./images/icon-prev.svg" alt="prev">
           </a>
-          <a href="#" class="button">
-            <img src="./images/icon-next.svg" alt="">
+          <a onclick="rightScroll()" class="button">
+            <img src="./images/icon-next.svg" alt="next">
           </a>
         </div>
       </div>
@@ -40,17 +40,17 @@
     </div>
   </div>
 <!-- John Tarkpor Slide -->
-  <div id="johnSlide" class="slide">
+  <div id="johnSlide" class="slide" hidden>
     <div class="imgandctrl">
       <img src="./images/image-john.jpg" alt="john-jr-frontend-developer-image" />
-        <div id="nav-btns">
-          <a href="#" class="button">
-            <img src="./images/icon-prev.svg" alt="prev">
-          </a>
-          <a href="#" class="button">
-            <img src="./images/icon-next.svg" alt="">
-          </a>
-        </div>
+      <div id="nav-btns">
+        <a onclick="leftScroll()" class="button">
+          <img src="./images/icon-prev.svg" alt="prev">
+        </a>
+        <a onclick="rightScroll()" class="button">
+          <img src="./images/icon-next.svg" alt="next">
+        </a>
+      </div>
     </div> 
     <div class="synopsis">
       <p class="quote">
@@ -65,10 +65,6 @@
     </div>
   </div>
 </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Kele Heart</a>.
-  </div>
+<script src="slides.js"></script>
 </body>
 </html>
