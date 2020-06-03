@@ -24,9 +24,7 @@ function changeSlide(s){
     for(i=0;i<slides.length;i++){
         if(s != i){
             slides[i].toggleAttribute("hidden");
-            slides[i].removeAttribute("shown");
         }else{
-            slides[i].toggleAttribute("shown");
             slides[i].removeAttribute("hidden");
         }
     }

@@ -12,12 +12,10 @@ html, body{
     background-size: 100%;
     background-position: bottom left;
 }
-.hidden{
-    visibility: hidden;
+[hidden]{
+    display: none !important;
 }
-.shown{
-    visibility: visible;
-}
+
 .slider{
     width:100%;
 }
@@ -35,18 +33,17 @@ html, body{
     width:100vw;
 }
 #nav-btns{
-    display:inline-flex;
+    display:flex;
     position: relative;
     left: 150px; top: -15px;
     background-color: #F4F4F4;
     width: 20%;
     padding: 1%;
     border-radius: 25px;
-    z-index: 10000;
+    z-index: 1;
 }
 .button{
     margin: auto;
-    padding: 1% 5%;
     text-decoration: none;
     text-emphasis: none;
     text-decoration-style: none;
@@ -88,8 +85,8 @@ img{
         background-repeat: no-repeat;
         background-position: bottom left, 15% 25%;
         background-size: 50%, 15%;
-        /*display: flex;
-        flex-wrap: row nowrap;*/
+        display: flex;
+        flex-wrap: row nowrap;
     }
     .synopsis{
         display:flex;
